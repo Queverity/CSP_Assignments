@@ -5,6 +5,7 @@ running = True
 while running:
   player_input = input("Rock, Paper, Scissors, Lizard, or Spock?")
   computer_input = random.randint(0,4)
+
   if player_input == "Rock":
     if computer_input == 0:
      print("The computer played rock. It's a tie!")
@@ -16,6 +17,7 @@ while running:
       print("The computer played lizard. You won!")
     elif computer_input == 4:
       print("The computer played spock. You lost.")
+
   elif player_input == "Paper":
     if computer_input == 0:
      print("The computer played rock. You won!")
@@ -27,6 +29,7 @@ while running:
       print("The computer played lizard. You lost.")
     elif computer_input == 4:
       print("The computer played spock. You won!")
+
   elif player_input == "Scissors":
     if computer_input == 0:
      print("The computer played rock. You lost.")
@@ -38,6 +41,7 @@ while running:
       print("The computer played lizard. You won!")
     elif computer_input == 4:
       print("The computer played spock. You lost.")
+
   elif player_input == "Lizard":
     if computer_input == 0:
       print("The computer played rock. You lost.")
@@ -49,6 +53,7 @@ while running:
       print("The computer played lizard. It's a tie!")
     elif computer_input == 4:
       print("The computer played spock. You won!")
+
   elif player_input == "Spock":
     if computer_input == 0:
       print("The computer played rock. You won!")
@@ -60,6 +65,7 @@ while running:
       print("The computer played lizard. You lost.")
     elif computer_input == 4:
       print("The computer played spock. It's a tie!")
+      
   else:
     print("Invalid Answer")
   player_input = input("Do you want to play again?")
