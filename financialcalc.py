@@ -16,9 +16,9 @@ grocPercent = (groceries/monthlyIncome)
 
 commutePercent = (transportation/monthlyIncome)
 
-savings = (monthlyIncome*0.20)
+savings = (monthlyIncome*0.15)
 
-print("You should put " + str(savings) + " dollars into your savings account. This is 20 percent of your monthly income.")
+print("You should put " + str(savings) + " dollars into your savings account. This is 15 percent of your monthly income.")
 
 print("Rent is " + str(rentPercent) + " percent of your monthly income.")
 
