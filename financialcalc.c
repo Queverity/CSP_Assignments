@@ -1,60 +1,67 @@
 #include <stdio.h>
 
 int main(void){
-    
-    char monthlyIncome[20];
 
-    char rent[20];
+    float income, rent, utilities, grocereries, transportation, savings, expenses, spend;
 
-    char utilities[20];
-
-    char groceries[20];
-
-    char commute[20];
-
-    char savings[] = (int)monthlyIncome*0.10;
+    float prent, putilities, pgroceries, ptransportation, psavings, pexpenses;
 
     printf("This is a budget calculator. Kind of. What is your monthly income? \n");
+    
+    scanf("%f", &income);
 
-    fgets(monthlyIncome, sizeof(monthlyIncome), stdin);
+    printf("How much do your utilities cost per month?");
 
-    printf("What is your monthly rent? \n");
+    scanf("%f", &utilities);
 
-    fgets(rent, sizeof(rent), stdin);
+    printf("How much does your rent cost per month?");
 
-    printf("How much do your utilities cost per month? \n");
+    scanf("%f", &rent);
 
-    fgets(utilities, sizeof(utilities), stdin);
+    printf("How much do your groceries cost per month?");
 
-    printf("How much do your groceries cost per month? \n");
+    scanf("%f", &grocereries);
 
-    fgets(groceries, sizeof(groceries), stdin);
+    printf("How much does your transportation cost per month?");
 
-    printf("How much does your monthly commute cost? \n");
+    scanf("%f", &transportation);
 
-    fgets(commute, sizeof(commute),stdin);
+    savings = income*0.2;
 
-    char accountAfter = (float)rent+(float)utilities+(float)groceries+(float)commute+(float)savings;
+    expenses = rent+utilities+grocereries+transportation;
 
-    char rentPercent[] = (float)rent/(float)monthlyIncome;
+    spend = income-expenses-savings;
 
-    char utilitiesPercent[] = (float)utilities/(float)monthlyIncome;
+    printf("You make $%.2f\n", income);
 
-    char groceriesPercent[] = (float)groceries/(float)monthlyIncome;
+    printf("Your expenses are $%.2f\n", expenses);
 
-    char commutePercent[] = (float)commute/(float)monthlyIncome;
+    printf("Your savings are $%.2f\n",savings );
 
-    printlf("You should put ", savings, " dollars into your savings account. This is 10 percent of your monthly income.");
+    printf("Your spending money is $%.2f\n", spend);
 
-    printlf("Rent is ", rentPercent, " percent of your monthly income.");
+    prent = rent/income*100;
 
-    printlf("Utilities are ", utilitiesPercent, " percent of your monthly income.");
+    putilities = utilities/income*100;
+    
+    pgroceries = grocereries/income*100;
 
-    printlf("Groceries are ", groceriesPercent), " percent of your monthly income.";
+    ptransportation = transportation/income*100;
 
-    printlf("Commute is ", commutePercent, " percent of your monthly income.");
+    psavings = savings/income*100;
 
-    printlf("You have ", accountAfter, " dollars left in your account. Have fun!");
+    pexpenses = expenses/income*100;
 
-    return 0;
+    printf("Your rent is %d%%\n", (int) prent, " percent of your total income.");
+
+    printf("Your utilities are %d%%\n", (int) putilities, " percent of your total income.");
+
+    printf("Your groceries are %d%%\n", (int) pgroceries, " percent of your total income.");
+
+    printf("Your transportation is %d%%\n", (int) ptransportation, " percent of your total income.");
+
+    printf("Your savings are %d%%\n", (int) psavings, " percent of your total income.");
+
+    printf("Your expenses are %d%%\n", (int) pexpenses, " percent of your total income.");
+    
 }
