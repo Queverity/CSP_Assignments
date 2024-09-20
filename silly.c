@@ -11,7 +11,7 @@ int main(void){
     printf("Give me a adjective.\n");
     fgets(adjective, sizeof(adjective),stdin);
     printf("Give me a food.\n");
-    fgets(food, sizeof(food),stdin);
+    fgets(food,sizeof(food),stdin);
     noun[strcspn(noun, "\n")] = '\0';
     adjective[strcspn(adjective, "\n")] = '\0';
     food[strcspn(food, "\n")] = '\0';
