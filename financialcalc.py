@@ -1,12 +1,15 @@
+def question(type):
+    return int(input(f"How much is your {type} per month?"))
+
 monthlyIncome = int(input("What is your monthly income?"))
 
-rent = int(input("How much does your rent cost per month?"))
+rent = question("rent")
 
-utilities = int(input("How much do your bills cost per month?"))
+utilities = question("utilities")
 
-groceries = int(input("How much do you spend on groceries per month?"))
+groceries = question("groceries")
 
-transportation = int(input("How much does your transportation cost per month?"))
+transportation = question("transportation")
 
 rentPercent = (rent/monthlyIncome)
 
