@@ -1,2 +1,1 @@
-
-    fgets(food, sizeof(food),stdin);
+printf("Your utilities are %d%% of your income.\n", (int) putilities,);
