@@ -1,7 +1,7 @@
 def question(type):
-    return int(input(f"How much is your {type} per month?"))
+    return int(input(f"Monthly {type}"))
 
-monthlyIncome = int(input("What is your monthly income?"))
+monthlyIncome = question("income")
 
 rent = question("rent")
 
