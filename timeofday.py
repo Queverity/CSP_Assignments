@@ -1,4 +1,4 @@
-time = 12
+time = 20
 
 if time <= 12:
     print("Good morning!")

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void){
-    int time = 12;
+    int time = 19;
     if (time <= 12){
         printf("Good morning!");
     }else if (time <= 18){
