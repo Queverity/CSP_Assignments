@@ -1,8 +1,11 @@
 #include <stdio.h>
-bool playing = true
+#include <stdlib.h>
+
 
 int main(void){
+    bool playing = true;
     while (playing == true){
-        how
+        computer = rand(1,3);
+        printf((str)computer);
     }
 }

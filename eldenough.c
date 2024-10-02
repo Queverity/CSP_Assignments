@@ -13,4 +13,6 @@ int main(void){
     }else{
         printf("You're a toddler. Why are you using this program?");
     }
+
+    return 0;
 }

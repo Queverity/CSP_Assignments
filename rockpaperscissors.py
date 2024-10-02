@@ -83,3 +83,8 @@ while running:
             
         if computer == 4:
             print("The computer played spock. It's a tie!")
+    playagain = input("Do you want to play again? Yes/No")
+    if playagain == "Yes":
+        pass
+    elif playagain == "No":
+        break

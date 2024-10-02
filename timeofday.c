@@ -9,4 +9,5 @@ int main(void){
     }else if (time <= 24){
         printf("Good evening!");
     }
+    return 0;
 }

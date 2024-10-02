@@ -1,8 +1,17 @@
-time = 20
+import datetime
 
-if time <= 12:
+currenttime = datetime.datetime.now()
+
+print(currenttime.hour)
+
+if currenttime.hour <= 12:
     print("Good morning!")
-elif time <= 18:
+elif currenttime.hour <= 18:
     print("Good afternoon!")
-elif time <= 24:
+elif currenttime.hour <= 24:
     print("Good evening!")
+else:
+    print("That's not a time.")
+
+
+
