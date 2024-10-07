@@ -52,16 +52,15 @@ int main(void){
 
     pexpenses = expenses/income*100;
 
-    printf("Your rent is %d%%\n", (int) prent, " percent of your total income.");
+    printf("Your rent is %d%% percent of your total income.\n", (int) prent);
 
-    printf("Your utilities are %d%%\n", (int) putilities, " percent of your total income.");
+    printf("Your utilities are %d%% percent of your total income.\n", (int) putilities);
 
-    printf("Your groceries are %d%%\n", (int) pgroceries, " percent of your total income.");
+    printf("Your groceries are %d%% percent of your total income.\n", (int) pgroceries);
 
-    printf("Your transportation is %d%%\n", (int) ptransportation, " percent of your total income.");
+    printf("Your transportation is %d%% percent of your total income.\n", (int) ptransportation);
 
-    printf("Your savings are %d%%\n", (int) psavings, " percent of your total income.");
+    printf("Your savings are %d%% percent of your total income.\n", (int) psavings);
 
-    printf("Your expenses are %d%%\n", (int) pexpenses, " percent of your total income.");
-    
+    printf("Your expenses are %d%% percent of your total income.\n", (int) pexpenses);
 }
