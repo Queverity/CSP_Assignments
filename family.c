@@ -1,8 +1,7 @@
 #include <stdio.h>
-int i;
+
 int main(void){
-    for(i=0;i<=10;i++){
-    printf(i);
-    }
+    arr family[5] = list("Mom","Dad","Mysti");
+    printf("%s",family);
     return 0;
 }
