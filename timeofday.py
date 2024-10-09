@@ -2,8 +2,8 @@ import datetime
 
 currenttime = datetime.datetime.now()
 
-print("The current hour is:" + currenttime.hour)
-print("The current date and time is:" + currenttime)
+print("The current hour is:" + str(currenttime.hour))
+print("The current date and time is:" + str(currenttime))
 
 if currenttime.hour <= 12:
     print("Good morning!")
