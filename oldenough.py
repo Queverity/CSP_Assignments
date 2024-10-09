@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 age = 19
+=======
+age = 17
+>>>>>>> origin/main
 if age >= 18:
     print("You are old enough to vote.")
 elif age >= 16:
