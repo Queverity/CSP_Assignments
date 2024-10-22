@@ -1,55 +1,62 @@
 import random
 #Hangman, by Clayton Baird, Nick L., Dean peterson, and Wakefield Batty
+#comments bad
+
+
 
 #Make a list of words - Everyone
-words = ["computer","science","moles","principles","rizzler","pryor","crunchy","love muffin"]
+words = ['computer','science','moles','principles','rizzler','pryor','crunchy']   
 
 
-
-word = words[random.randint(0,6)]
+word = words[random.randint(0,7)]
 wordLength = len(word)
 
-lettersGuesssed = []
-lettersGuesssedStr = ""
+lettersGuessed = []
+lettersGuessedStr = '' 
 lettersFailed = []
-lettersFailedStr = ""
+lettersFailedStr = ''
 incorrectGuesses = 0
-#Allow people to input letters - Nicholas
-while incorrectGuesses > 6:
-    #Make something to choose words - Everyone
-    
-    print("Hello! Welcome to hangman. A word has been selected randomly.")
-    guess = input("Please enter a letter to guess.")
-    listWord = str.split(word)
-    for item in listWord:
-        if guess == listWord[item]:
-            lettersGuesssed.insert(item, guess)
-            lettersGuesssedStr.join(lettersGuesssed)
-            correct = True
-    if correct != True:
-        lettersFailed.insert(item, guess)
-        lettersGuesssedStr.join(lettersFailed)
-        incorrectGuesses += 1
-    if incorrectGuesses == 6:
-        playingAgain()
-            
-#Set an amount of tries - Dean
+for i in range(wordLength):
+    lettersGuessed.insert(i, "_")
 
-#Print out incorrect letters - Pryor
 
-#Fill gaps in word with correct letters - Nicholas
-
-#Show if someone has won or not - Wakefield
-if x == y:
-    print("You win!") #make a variable that is either one thing or another to tell the code whether they win or lose.
-else:
-    print("Why are you so bad at this?")
 #Allow people to choose to play again or not - Pryor
 def playingAgain():
-    playAgain = input("Would you like to play again? Yes/No")
+    listWord = []
+    playAgain = input("Would you like to play again? Yes/nuhuhuh")
     if playAgain == "Yes":
         incorrectGuesses = 0
-        word = words[random.randint(0,6)]
-    elif:
-        break
+        word = words[random.randint(0,7)] #dean 
+    else:
+        incorrectGuesses = 9
+# Set amount of tries - Dean
+while incorrectGuesses < 6:
+    #Make something to choose words - Everyone
+    i = 0
+    listWord = []
+    print("Hello! Welcome to hangman. A word has been selected randomly.")
+    #Allow people to input letters - Nicholas
+    guess = input("Please guess a letter.")
+    correct = False
+    listWord = str.split(word)
+    for item in listWord:
+        #Fill gaps in word with correct letters - Nicholas
+        if guess == listWord[i]:
+            lettersGuessed[i] = guess
+            lettersGuessedStr.join(lettersGuessed)
+            correct = True
+    if correct != True:
+        lettersFailed.insert(i, guess)
+        lettersGuessedStr.join(lettersFailed)
+    i += 1
+    #Print out incorrect letters - Pryor
+    print("Your current incorrect letters are: " + lettersFailedStr)
+            
+    incorrectGuesses += 1
     
+    #Show if someone has won or not - Wakefield
+    if lettersGuessed == listWord:
+        print("You win!") 
+    elif incorrectGuesses >= 6:
+        print("You just hanged a man. He is now dead. There is blood on your hands now. His family is miserable without him, and they have no food to eat because he bought all of it. Anyways, the word was " + word)
+        playingAgain()
