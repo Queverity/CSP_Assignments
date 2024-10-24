@@ -27,7 +27,8 @@ def main():
         if guess in lettersFailed or guess in lettersGuessed:
             print("Sorry, you already tried that.")
             continue
-        if len(guess) > 1:
+            #Checks if you input more than one letter.
+        if len(guess) > 1:#edited-dean
             print("Please enter one letter.\nYou bug. You small little baby buffoon.\nYou fool. You court jester. \nYou worthless piece of scrap. \nYou son of a ingrown hamsters toenail. \n Your mother was a hamster and your father smelled of elderberries!")
             continue
         correct = False
@@ -56,18 +57,20 @@ def main():
         #Show if someone has won or not -Wakefield
         if lettersGuessed == listWord:
             print("You won!")
+            #Checks if you want to play again - Nicholas Larsen
             playingAgain = input("Would you like to play again? Y/N:")
             if playingAgain == "Yes":
                 main()
             else:
                 print("Goodbye! Please come back, I get lonely. I might commit several unforgivable violent war crimes if you don't.")
                 exit()
-        elif incorrectGuesses >= 7:
+        elif incorrectGuesses >= 7: #edited - dean
             print("You just hanged a man. He is now dead. \n There is blood on your hands now. His family is miserable without him, and they have no food to eat because he bought all of it. Anyways, the word was " + word + ".")
+            #Checks if you want to play again - Nicholas Larsen
             playingAgain = input("Would you like to play again? Y/N:")
             if playingAgain == "Y":
                 main()
             else:
                 print("Goodbye! Please come back, I get lonely. I might commit several unforgivable violent war crimes if you don't.")
                 exit()
-main()
+main()#cheating main method
