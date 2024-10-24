@@ -18,7 +18,6 @@ def main():
     incorrectGuesses = 0
     for i in range(wordLength):
         lettersGuessed.insert(i, "_")
-    
     print("Hello! Welcome to hangman. A Word has been chosen at random.\nBy the way, I haven't commited any war crimes.\nYet.")
     while True:
         i = 0
