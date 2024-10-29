@@ -58,7 +58,7 @@ def main():
         if lettersGuessed == listWord:
             print("You won!")
             #Checks if you want to play again - Nicholas Larsen
-            playingAgain = input("Would you like to play again? Y/N:")
+            playingAgain = input("Would you like to play again? Yes/No:")
             if playingAgain == "Yes":
                 main()
             else:
