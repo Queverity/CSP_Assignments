@@ -183,7 +183,7 @@ while playing:
         print("X wins!")
         playing = False
         break
-    elif  board1[3 == "X"] and board2[3] == "X" and board3[3] == "X":
+    elif  board1[3] == "X" and board2[3] == "X" and board3[3] == "X":
         print("X wins!")
         playing = False
         break
@@ -219,3 +219,4 @@ while playing:
         print("O wins!")
         playing = False  
         break    
+    

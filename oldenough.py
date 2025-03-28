@@ -1,9 +1,11 @@
-<<<<<<< HEAD
-age = 19
-=======
+
+
 age = 17
->>>>>>> origin/main
-if age >= 18:
+if age >= 25:
+    print("You are old enough to get a mortgage.")
+elif age >= 21:
+    print("You are old enough to buy alcohol and nicotine.")
+elif age >= 18:
     print("You are old enough to vote.")
 elif age >= 16:
     print("You are old enough to drive.")
